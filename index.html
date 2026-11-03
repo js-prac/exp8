@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Changing Background Color</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="main-container">
+    <p class="eyebrow">JAVASCRIPT EVENTS</p>
+    <h1>Interactive Color Demo</h1>
+    <p class="intro">Explore how mouse and focus events change an element's background.</p>
+
+    <section
+      id="mouseBox"
+      class="mouse-box"
+      onmouseover="changeMouseOverColor()"
+      onmouseout="restoreMouseOverColor()"
+    >
+      <span class="section-label">01 / MOUSE EVENT</span>
+      <h2>Mouse Over Event</h2>
+      <p>Move your mouse over this panel to change its color.</p>
+    </section>
+
+    <section class="focus-section">
+      <span class="section-label">02 / FOCUS EVENT</span>
+      <h2>Focus Event</h2>
+      <p>Click or tab into the text field to see the focus effect.</p>
+      <input
+        type="text"
+        id="focusBox"
+        placeholder="Click here and start typing"
+        onfocus="changeFocusColor()"
+        onblur="restoreFocusColor()"
+      />
+    </section>
+    <p class="footer-note">HTML · CSS · JavaScript</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

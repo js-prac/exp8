@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f4f6fb;
+  color: #172033;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.main-container {
+  width: min(800px, 100%);
+  text-align: center;
+}
+
+.eyebrow, .section-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #64748b;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+}
+
+h1, h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 42px);
+  letter-spacing: -1.5px;
+  color: #172554;
+  margin-bottom: 12px;
+}
+
+.intro {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.mouse-box {
+  width: 100%;
+  padding: 42px 28px;
+  background-color: blue;
+  color: white;
+  border-radius: 18px;
+  margin-bottom: 22px;
+  box-shadow: 0 12px 28px rgba(30, 41, 59, 0.12);
+  transition: background-color 0.3s ease;
+}
+
+.mouse-box .section-label {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 12px;
+}
+
+.mouse-box h2, .focus-section h2 {
+  font-size: 23px;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+.mouse-box p, .focus-section p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.focus-section {
+  background: #fff;
+  padding: 34px 30px;
+  border: 1px solid #e5eaf3;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(30, 41, 59, 0.06);
+}
+
+.focus-section .section-label {
+  margin-bottom: 12px;
+}
+
+.focus-section h2 {
+  color: #172554;
+}
+
+.focus-section p {
+  color: #64748b;
+  margin-bottom: 22px;
+}
+
+#focusBox {
+  width: 75%;
+  max-width: 480px;
+  padding: 15px 17px;
+  border: 2px solid #d5dce8;
+  border-radius: 10px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#focusBox::placeholder {
+  color: #94a3b8;
+}
+
+#focusBox:focus {
+  border-color: #2563eb;
+  background-color: #dbeafe;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.footer-note {
+  margin-top: 22px;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    padding: 32px 16px;
+  }
+
+  .mouse-box {
+    padding: 34px 20px;
+  }
+
+  .focus-section {
+    padding: 28px 20px;
+  }
+
+  #focusBox {
+    width: 100%;
+  }
+}
